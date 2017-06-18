@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="150.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.PhotoController4">
+   <children>
+      <ImageView fx:id="image_main" fitHeight="106.0" fitWidth="193.0" layoutX="6.0" layoutY="14.0" onMouseClicked="#imageViewClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../자료/214.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_title" layoutX="14.0" layoutY="151.0" prefHeight="15.0" prefWidth="169.0" text="글제목" />
+   </children>
+</AnchorPane>

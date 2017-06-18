@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.GetMsgController">
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_name" layoutX="77.0" layoutY="23.0" prefHeight="15.0" prefWidth="258.0" text="이름" />
+            <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/getm.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #e2f2e1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="166.0" layoutY="11.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #ffc4aa;" text="확인" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

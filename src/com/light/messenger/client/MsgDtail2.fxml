@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" styleClass="msgdtail_gra" stylesheets="@../../../../../bin/com/light/view/styles/Messenger_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.MsgDtail2Controller">
+   <children>
+      <Label fx:id="label_content" layoutX="67.0" layoutY="100.0" prefHeight="231.0" prefWidth="314.0" style="-fx-background-color: #e2c5ac;" styleClass="magdtail2_r" text="오늘은 날씨가 참좋아" />
+      <Button layoutX="313.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #dbc5b1;" styleClass="msgdtail_btn" stylesheets="@../../view/styles/Messenger_style.css" text="취소" />
+      <Button layoutX="237.0" layoutY="355.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #dbc5b1;" styleClass="msgdtail_btn" stylesheets="@../../../../../bin/com/light/view/styles/Messenger_style.css" text="삭제" />
+      <Label fx:id="label_send" layoutX="86.0" layoutY="18.0" prefHeight="15.0" prefWidth="99.0" text="aa">
+         <font>
+            <Font name="GulimChe" size="14.0" />
+         </font></Label>
+      <Label fx:id="label_resive" layoutX="292.0" layoutY="17.0" prefHeight="15.0" prefWidth="86.0" text="bb">
+         <font>
+            <Font name="GulimChe" size="14.0" />
+         </font></Label>
+      <Label fx:id="label_date" layoutX="86.0" layoutY="47.0" prefHeight="15.0" prefWidth="143.0" text="2017-01-01" />
+      <ImageView fitHeight="40.0" fitWidth="86.0" layoutX="3.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/msgb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="79.0" layoutX="214.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/mags.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="79.0" layoutX="7.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/msgti.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="59.0" layoutX="7.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../bin/com/light/view/images/msgna.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.PhotoController3">
+   <top>
+      <Pane prefHeight="303.0" prefWidth="700.0" style="-fx-background-color: #e5e5df;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_num" layoutX="97.0" layoutY="14.0" prefHeight="30.0" prefWidth="215.0" text="Label">
+               <font>
+                  <Font name="GulimChe" size="14.0" />
+               </font></Label>
+            <Label fx:id="label_writer" layoutX="97.0" layoutY="52.0" prefHeight="29.0" prefWidth="212.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="label_date" layoutX="389.0" layoutY="54.0" prefHeight="24.0" prefWidth="281.0" text="Label">
+               <font>
+                  <Font name="GulimChe" size="14.0" />
+               </font></Label>
+            <Label fx:id="label_title" layoutX="389.0" layoutY="17.0" prefHeight="27.0" prefWidth="281.0" text="Label">
+               <font>
+                  <Font name="GulimChe" size="14.0" />
+               </font></Label>
+            <ImageView fx:id="image_content" fitHeight="206.0" fitWidth="402.0" layoutX="149.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="37.0" fitWidth="80.0" layoutX="313.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/gtitle.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="EXCLUSION" fitHeight="37.0" fitWidth="80.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/gnumber.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="EXCLUSION" fitHeight="44.0" fitWidth="65.0" layoutX="34.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/gwriter.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="EXCLUSION" fitHeight="37.0" fitWidth="80.0" layoutX="327.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../bin/com/light/view/images/gdate.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="247.0" prefWidth="700.0" style="-fx-background-color: #e5e5df;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="20.0" layoutY="189.0" mnemonicParsing="false" onAction="#cancle" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #ffd7c9;" text="목록" />
+            <Button layoutX="550.0" layoutY="188.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #f9cda9;" text="삭제" />
+            <ListView fx:id="listView_dek" layoutX="20.0" layoutY="30.0" maxWidth="660.0" minHeight="99.0" minWidth="660.0" prefHeight="108.0" prefWidth="660.0" />
+            <TextArea fx:id="text_aa" layoutX="20.0" layoutY="145.0" pickOnBounds="false" prefHeight="25.0" prefWidth="590.0" promptText="댓글을 입력해주세요" snapToPixel="false" />
+            <Button layoutX="612.0" layoutY="145.0" mnemonicParsing="false" onAction="#insertComent" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #ffd7c9;" text="댓글등록" />
+            <Button layoutX="621.0" layoutY="188.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #f9cda9;" text="수정" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="182.0" prefWidth="700.0" style="-fx-background-color: #e5e5df;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_con" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="21.0" layoutY="38.0" prefHeight="138.0" prefWidth="660.0" style="-fx-border-color: grey;" text="Label" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.HomepageCommentController">
+   <children>
+      <Pane prefHeight="25.0" prefWidth="650.0">
+         <children>
+            <Button fx:id="button_update" layoutX="570.0" layoutY="-17.0" mnemonicParsing="false" onAction="#update" prefHeight="44.0" prefWidth="50.0" styleClass="Comment-button-change" stylesheets="@../../view/styles/Messenger_style.css" />
+            <Label fx:id="label_id" layoutX="6.0" layoutY="3.0" prefHeight="20.0" prefWidth="50.0" text="아이디">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_con" layoutX="65.0" layoutY="3.0" prefHeight="20.0" prefWidth="380.0" text="작성내용">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_date" layoutX="451.0" layoutY="4.0" prefHeight="20.0" prefWidth="122.0" text="2017-07-02 00:00:00">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_code" layoutX="219.0" layoutY="6.0" text="Label" visible="false" />
+            <TextField fx:id="text_con" layoutX="66.0" layoutY="1.0" onAction="#update" prefHeight="20.0" prefWidth="380.0" visible="false" />
+            <Button fx:id="button_delete" layoutX="605.0" layoutY="-18.0" mnemonicParsing="false" onAction="#delete" prefHeight="55.0" prefWidth="58.0" styleClass="Comment-button-delete" stylesheets="@../../view/styles/Messenger_style.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

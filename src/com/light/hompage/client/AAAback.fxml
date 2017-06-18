@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="477.0" maxWidth="668.0" minHeight="477.0" minWidth="668.0" prefHeight="477.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.HomepageImageController">
+   <center>
+      <Pane prefHeight="168.0" prefWidth="668.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fx:id="image_main" fitHeight="443.0" fitWidth="624.0" layoutX="2.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="label_notimage" layoutX="162.0" layoutY="200.0" prefHeight="36.0" prefWidth="305.0" text="사진첩에 사진을 등록하세요" visible="false">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderpane" maxHeight="690.0" maxWidth="390.0" minHeight="690.0" minWidth="390.0" prefHeight="690.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.MessengerController">
+   <top>
+      <BorderPane maxHeight="150.0" maxWidth="390.0" minHeight="150.0" minWidth="390.0" prefHeight="150.0" prefWidth="390.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox maxHeight="110.0" maxWidth="390.0" minHeight="110.0" minWidth="390.0" prefHeight="110.0" prefWidth="390.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="110.0" prefWidth="388.0">
+                     <children>
+                        <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="-21.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../view/images/alight.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="93.0" layoutX="305.0" layoutY="68.0" onMousePressed="#logOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../view/images/log.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="80.0" fitWidth="183.0" layoutX="65.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../view/images/titlelightloge.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </children></HBox>
+         </top>
+         <center>
+            <TextField fx:id="search_field" focusTraversable="false" maxHeight="30.0" maxWidth="380.0" minHeight="30.0" minWidth="380.0" onKeyPressed="#userSearch" prefHeight="30.0" prefWidth="380.0" promptText="친구검색" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <VBox maxHeight="550.0" maxWidth="390.0" minHeight="550.0" minWidth="390.0" prefHeight="550.0" prefWidth="390.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listview" depthTest="ENABLE" maxHeight="500.0" maxWidth="390.0" minHeight="550.0" minWidth="390.0" prefHeight="550.0" prefWidth="390.0" style="-fx-border-color: WHITE;" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

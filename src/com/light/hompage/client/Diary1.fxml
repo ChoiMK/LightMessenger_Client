@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="477.0" maxWidth="668.0" minHeight="477.0" minWidth="668.0" prefHeight="477.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.DiaryController">
+   <top>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView_content" prefHeight="391.0" prefWidth="668.0" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="comboBox_search" layoutX="26.0" layoutY="147.0" prefHeight="30.0" prefWidth="127.0" promptText="검색조건" style="-fx-background-color: #dcd3c9;" />
+            <TextField fx:id="textField_search" layoutX="169.0" layoutY="146.0" prefHeight="30.0" prefWidth="219.0" style="-fx-background-color: #f6efe8;" />
+            <Button layoutX="387.0" layoutY="146.0" mnemonicParsing="false" onAction="#select" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: #dcd3c9;" styleClass="mh_min_btn" text="검색" />
+            <Button layoutX="494.0" layoutY="145.0" mnemonicParsing="false" onAction="#delete" prefHeight="32.0" prefWidth="54.0" style="-fx-background-color: #dcd3c9;" styleClass="mh_min_btn" text="삭제" />
+            <Button layoutX="564.0" layoutY="144.0" mnemonicParsing="false" onAction="#onclickDiary" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #dcd3c9;" styleClass="mh_min_btn" text="글쓰기" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

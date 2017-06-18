@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="103.0" maxWidth="375.0" minHeight="40.0" minWidth="375.0" prefHeight="77.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <ImageView fx:id="image_main" fitHeight="40.0" fitWidth="50.0" layoutX="34.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../com/light/view/images/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_name" layoutX="86.0" layoutY="30.0" prefHeight="29.0" prefWidth="71.0" styleClass="user_name_color" text="name" />
+      <Label layoutX="10.0" layoutY="7.0" styleClass="user_name_color" text="내 프로필" />
+      <Separator layoutX="2.0" layoutY="70.0" prefHeight="3.0" prefWidth="360.0" style="-fx-background-color: pink;" />
+      <ImageView fitHeight="51.0" fitWidth="63.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/light/view/images/round.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="180.0" layoutY="25.0" mnemonicParsing="false" onAction="#msglocker" prefHeight="40.0" prefWidth="50.0" styleClass="my_btn_m" />
+      <Button layoutX="250.0" layoutY="25.0" mnemonicParsing="false" onAction="#profileSet" prefHeight="40.0" prefWidth="50.0" styleClass="my_btn_p" />
+      <Button layoutX="317.0" layoutY="25.0" mnemonicParsing="false" onAction="#myHome" prefHeight="40.0" prefWidth="50.0" styleClass="my_btn_h" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="477.0" maxWidth="668.0" minHeight="477.0" minWidth="668.0" prefHeight="477.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.SetController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="text_title" layoutX="200.0" layoutY="74.0" prefHeight="40.0" prefWidth="370.0" style="-fx-background-radius: 15;" text="대문글" />
+            <Label layoutX="124.0" layoutY="65.0" prefHeight="57.0" prefWidth="116.0" text="▼대문글" textFill="#8a8585">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ColorPicker fx:id="color_select" layoutX="124.0" layoutY="304.0" prefHeight="40.0" prefWidth="340.0" style="-fx-background-radius: 15;" />
+            <Label layoutX="123.0" layoutY="258.0" prefHeight="57.0" prefWidth="116.0" text="▼배경색" textFill="#8a8585">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="116.0" prefHeight="57.0" prefWidth="146.0" text="▼상태메시지" textFill="#8a8585">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="415.0" layoutY="387.0" mnemonicParsing="false" onAction="#updateHp" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #f0e6fa;" styleClass="mh_min_btn" text="저장" />
+            <Button layoutX="507.0" layoutY="387.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #f0e6fa;" styleClass="mh_min_btn" text="취소" />
+            <TextArea fx:id="text_smsg" layoutX="207.0" layoutY="138.0" prefHeight="100.0" prefWidth="360.0" style="-fx-background-insets: 20;" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

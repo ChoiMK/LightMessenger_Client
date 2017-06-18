@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="380.0" maxWidth="400.0" minHeight="380.0" minWidth="400.0" prefHeight="380.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.member.PwFindController">
+   <top>
+      <Pane maxHeight="42.0" maxWidth="400.0" minHeight="42.0" minWidth="400.0" prefHeight="42.0" prefWidth="400.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="144.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../view/images/pass.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="68.0" layoutY="73.0" text="이름" />
+            <Label layoutX="58.0" layoutY="186.0" text="이메일" />
+            <TextField fx:id="t_name" layoutX="108.0" layoutY="64.0" prefHeight="30.0" prefWidth="230.0" />
+            <TextField fx:id="t_mail" layoutX="108.0" layoutY="178.0" prefHeight="30.0" prefWidth="230.0" />
+            <TextField fx:id="t_id" layoutX="108.0" layoutY="121.0" prefHeight="30.0" prefWidth="230.0" />
+            <Label layoutX="58.0" layoutY="129.0" text="아이디" />
+            <Button layoutX="189.0" layoutY="253.0" mnemonicParsing="false" onAction="#pwFind" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ffc4aa;" text="email전송" />
+            <Button layoutX="280.0" layoutY="252.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #ffc4aa;" text="취소" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

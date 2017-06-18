@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane orientation="VERTICAL" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.manager.client.DetailController">
+   <children>
+      <Pane minHeight="50.0" minWidth="600.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #ffe8e8;">
+         <children>
+            <Label fx:id="label_id" layoutX="21.0" layoutY="18.0" />
+            <TextField fx:id="text_tt" layoutX="64.0" layoutY="14.0" prefHeight="23.0" prefWidth="514.0" />
+         </children> 
+      </Pane>
+      <Pane minHeight="50.0" minWidth="600.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #ffe8e8;">
+         <children>
+            <Label fx:id="label_wr" layoutX="21.0" layoutY="18.0" text="Label" />
+            <Label fx:id="label_date" layoutX="322.0" layoutY="18.0" text="Label" />
+         </children>
+      </Pane>
+      <Pane maxHeight="250.0" maxWidth="600.0" minHeight="250.0" minWidth="600.0" prefHeight="250.0" prefWidth="600.0">
+         <children>
+            <TextArea fx:id="text_con" minHeight="250.0" minWidth="600.0" prefHeight="250.0" prefWidth="600.0" />
+            <ImageView fx:id="image_view" fitHeight="150.0" fitWidth="200.0" layoutX="376.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane minHeight="50.0" minWidth="600.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #e8f4ff;">
+         <children>
+            <Button layoutX="468.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickDelete" style="-fx-background-color: #ff7a7a;" text="삭제" />
+            <Button layoutX="521.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickCancle" style="-fx-background-color: #b5c5ff;" text="취소" />
+         </children>
+      </Pane>
+   </children>
+</FlowPane>

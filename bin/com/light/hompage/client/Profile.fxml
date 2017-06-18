@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="477.0" maxWidth="668.0" minHeight="477.0" minWidth="668.0" prefHeight="477.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.ProfileController">
+   <center>
+      <Pane prefHeight="168.0" prefWidth="668.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </BorderPane.margin>
+         <children>
+            <GridPane layoutY="1.0" prefHeight="258.0" prefWidth="629.0" styleClass="profile_go">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </padding>
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="이름" textFill="#8a8585">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="생일" textFill="#8a8585" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="성별" textFill="#8a8585" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="닉네임" textFill="#8a8585" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="ID" textFill="#8a8585" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="이메일" textFill="#8a8585" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="핸드폰번호" textFill="#8a8585" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="label_name" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label_bir" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label_gender" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label_nic" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label_id" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label_email" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label_num" alignment="TOP_CENTER" contentDisplay="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <ImageView fx:id="image_pro" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" top="30.0" />
+         </BorderPane.margin>
+         <image>
+            <Image url="@../../../../com/light/view/images/user.png" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>

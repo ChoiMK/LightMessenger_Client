@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="690.0" maxWidth="390.0" minHeight="690.0" minWidth="390.0" prefHeight="500.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.ProfileSettingController">
+   <top>
+      <Pane prefHeight="66.0" prefWidth="390.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="102.0" layoutX="3.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/prochange.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </top>
+   <center>
+      <Pane maxHeight="600.0" maxWidth="390.0" minHeight="600.0" minWidth="390.0" prefHeight="400.0" prefWidth="390.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" layoutX="1.0" layoutY="156.0" prefHeight="400.0" prefWidth="390.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="비밀번호확인" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="비밀번호" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="닉네임" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" text="이름" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" text="주소" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" text="핸드폰" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" text="생년월일" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" text="프로필사진" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <PasswordField fx:id="text_pw" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="text_pwC" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="text_nic" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="text_name" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="text_add" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="text_num" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#nicCheak" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #fbb864;" text="중복확인" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#testimg" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #fbb864;" text="파일선택" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+                  <DatePicker fx:id="date_bir" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </GridPane>
+            <ImageView fx:id="image_pro" fitHeight="150.0" fitWidth="200.0" layoutX="96.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="255.0" layoutY="562.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #ffc4aa;" text="취소" />
+            <Button layoutX="323.0" layoutY="562.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #ffc4aa;" text="저장" />
+            <Button layoutX="18.0" layoutY="562.0" mnemonicParsing="false" onAction="#withdrawal" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #ffc4aa;" text="탈퇴" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.SendMsgController">
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 10;" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #e2f2e1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_name" layoutX="69.0" layoutY="22.0" prefHeight="18.0" prefWidth="246.0" text="이름">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ImageView fitHeight="36.0" fitWidth="84.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/sendm.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="132.0" layoutY="10.0" mnemonicParsing="false" onAction="#send" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #ffc4aa;" text="전송" />
+            <Button layoutX="206.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #ffc4aa;" text="취소" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

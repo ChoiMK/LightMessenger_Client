@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="477.0" maxWidth="668.0" minHeight="477.0" minWidth="668.0" prefHeight="477.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.DiaryController2">
+   <bottom>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="437.0" layoutY="138.0" mnemonicParsing="false" onAction="#setOnclickSave" prefHeight="30.0" prefWidth="70.0" styleClass="mh_min_btn" text="저장" />
+            <Button layoutX="530.0" layoutY="138.0" mnemonicParsing="false" onAction="#setOnclickGuestBookCancel" prefHeight="30.0" prefWidth="70.0" styleClass="mh_min_btn" text="취소" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="text_title" layoutX="127.0" layoutY="60.0" prefHeight="36.0" prefWidth="488.0" style="-fx-background-radius: 10;" text="글제목" />
+            <TextArea fx:id="text_con" layoutX="50.0" layoutY="109.0" prefHeight="274.0" prefWidth="567.0" text="내용을 입력해주세요" />
+            <ImageView fitHeight="57.0" fitWidth="103.0" layoutX="36.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/gtitle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

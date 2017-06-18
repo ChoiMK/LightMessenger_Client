@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.light.client.file.ReceiveTCPClient" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/client/file/ReceiveTCPClient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="129" x="773" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.light.client.file.TCPFileClient" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/client/file/TCPFileClient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="129" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.light.client.file.SendTCPClient" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/client/file/SendTCPClient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="129" x="210" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.light.client.file.FileOutWriter" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/client/file/FileOutWriter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="155" x="1317" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.light.client.file.ImageReceiveClient" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/client/file/ImageReceiveClient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="136" x="1696" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.light.mail.Mail" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/mail/Mail.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="137" x="942" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.light.vo.HpVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/HpVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="405" width="144" x="1512" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.light.vo.GbkVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/GbkVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="162" x="2085" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.light.vo.NumVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/NumVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="149" x="2659" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.light.vo.MsgVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/MsgVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="163" x="570" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.light.vo.UserVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/UserVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="132" x="2848" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.light.vo.ImgVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/ImgVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="621" width="173" x="1872" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.light.vo.CtVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/CtVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="132" x="2287" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.light.vo.DiaVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/DiaVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="158" x="1119" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.light.vo.FdVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/FdVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="151" x="379" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.light.vo.MemVO" project="LightMessenger_Client" 
+    file="/LightMessenger_Client/src/com/light/vo/MemVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="675" width="160" x="2459" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="17">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="18" name="userVO"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

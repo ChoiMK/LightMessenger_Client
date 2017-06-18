@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.hompage.client.UpdatePhotoController">
+   <top>
+      <Pane maxHeight="100.0" maxWidth="700.0" minHeight="100.0" minWidth="700.0" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: #ffe5f5;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="text_title" layoutX="135.0" layoutY="34.0" prefHeight="33.0" prefWidth="505.0" style="-fx-background-radius: 10;" />
+            <ImageView fitHeight="39.0" fitWidth="109.0" layoutX="56.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../bin/com/light/view/images/gtitle.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </top>
+   <center>
+      <Pane maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffe5f5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image_main" fitHeight="222.0" fitWidth="386.0" layoutX="157.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <TextArea fx:id="text_content" layoutX="36.0" layoutY="250.0" prefHeight="244.0" prefWidth="624.0" style="-fx-background-radius: 10;" />
+            <Button layoutX="595.0" layoutY="223.0" mnemonicParsing="false" onAction="#selectFile" styleClass="photo2_btn" stylesheets="@../../view/styles/Messenger_style.css" text="파일선택" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane maxHeight="100.0" maxWidth="700.0" minHeight="100.0" minWidth="700.0" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: #ffe5f5;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="520.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="60.0" styleClass="photo2_btn" stylesheets="@../../view/styles/Messenger_style.css" text="저장" />
+            <Button layoutX="598.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="60.0" styleClass="photo2_btn" stylesheets="@../../../../../bin/com/light/view/styles/Messenger_style.css" text="취소" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.manager.client.memberController">
+   <center>
+      <Pane maxHeight="400.0" maxWidth="800.0" minHeight="400.0" minWidth="800.0" prefHeight="400.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="c_t" layoutX="11.0" layoutY="15.0" prefHeight="30.0" prefWidth="107.0" promptText="회원종류" style="-fx-background-color: #d3e9ff;" />
+            <TableView fx:id="tableView_content" layoutX="128.0" layoutY="14.0" prefHeight="305.0" prefWidth="633.0" styleClass="manage_table-view" />
+            <Button layoutX="576.0" layoutY="337.0" mnemonicParsing="false" onAction="#in" prefHeight="38.0" prefWidth="76.0" style="-fx-background-color: #b5d7ff;" text="복구" textFill="#5d5d5d">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="673.0" layoutY="337.0" mnemonicParsing="false" onAction="#out" prefHeight="38.0" prefWidth="76.0" style="-fx-background-color: #b5d7ff;" text="탈퇴" textFill="#5d5d5d">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="40.0" maxWidth="375.0" minHeight="40.0" minWidth="375.0" onMousePressed="#fdDelete" prefHeight="40.0" prefWidth="375.0" styleClass="user_list" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <children>
+      <ImageView fx:id="image_main" fitHeight="40.0" fitWidth="48.0" layoutX="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/light/view/images/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_name" layoutX="85.0" layoutY="5.0" prefHeight="29.0" prefWidth="82.0" styleClass="user_name_color" text="name">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="184.0" layoutY="1.0" mnemonicParsing="false" onAction="#chat" prefHeight="35.0" prefWidth="40.0" styleClass="chat_btn" />
+      <Button layoutX="256.0" layoutY="1.0" mnemonicParsing="false" onAction="#msg" prefHeight="35.0" prefWidth="40.0" styleClass="note_btn" />
+      <Button layoutX="323.0" layoutY="1.0" mnemonicParsing="false" onAction="#home" prefHeight="35.0" prefWidth="40.0" styleClass="hp_btn" />
+      <ImageView fitHeight="47.0" fitWidth="53.0" layoutX="29.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/light/view/images/round.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_onOff" fitHeight="10.0" fitWidth="10.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/light/view/images/off2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

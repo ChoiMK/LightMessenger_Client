@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="30.0" maxWidth="700.0" minHeight="30.0" minWidth="700.0" onMousePressed="#detail" prefHeight="30.0" prefWidth="700.0" styleClass="msglist" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.MsgDetailController">
+   <children>
+      <Label fx:id="label_send" layoutX="34.0" layoutY="7.0" prefHeight="15.0" prefWidth="74.0" text="보낸사람" />
+      <Label fx:id="label_resive" layoutX="120.0" layoutY="7.0" prefHeight="15.0" prefWidth="74.0" text="받은사람" />
+      <Label fx:id="label_date" layoutX="198.0" layoutY="6.0" prefHeight="15.0" prefWidth="127.0" text="시간" />
+      <Label fx:id="label_content" layoutX="333.0" layoutY="9.0" prefHeight="15.0" prefWidth="255.0" text="내용" />
+      <ImageView fx:id="img_new" fitHeight="23.0" fitWidth="25.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../com/light/view/images/new.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_read" layoutX="588.0" layoutY="-2.0" mnemonicParsing="false" onAction="#detail2" prefHeight="36.0" prefWidth="55.0" styleClass="msg_mnibtn" stylesheets="@../../view/styles/Messenger_style.css" />
+      <Button fx:id="button_delete" layoutX="646.0" layoutY="5.0" mnemonicParsing="false" onAction="#delete" prefHeight="23.0" prefWidth="35.0" styleClass="msg_mnibtn2" stylesheets="@../../view/styles/Messenger_style.css" />
+   </children>
+</AnchorPane>

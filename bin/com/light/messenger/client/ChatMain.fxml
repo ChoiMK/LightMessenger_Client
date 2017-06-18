@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane fx:id="borderPane" prefHeight="550.0" prefWidth="350.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.ChatMainController">
+   <top>
+      <Pane prefHeight="76.0" prefWidth="400.0" style="-fx-background-color: #f7ffb9;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="92.0" layoutX="-11.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../bin/com/light/view/images/alight.gif" />
+               </image></ImageView>
+            <Button fx:id="close_btn" layoutX="317.0" layoutY="-4.0" mnemonicParsing="false" onAction="#close" prefHeight="36.0" prefWidth="34.0" styleClass="decoration-button-close" />
+            <Button fx:id="invite_btn" layoutX="239.0" layoutY="-1.0" mnemonicParsing="false" onAction="#inviteFriend" prefHeight="40.0" prefWidth="40.0" styleClass="decoration-button-useradd" />
+            <Label fx:id="id_label" alignment="CENTER" layoutX="110.0" layoutY="46.0" prefHeight="22.0" prefWidth="116.0" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="GulimChe" size="18.0" />
+               </font></Label>
+            <Button layoutX="278.0" layoutY="-1.0" mnemonicParsing="false" onAction="#receiveFile" prefHeight="40.0" prefWidth="40.0" styleClass="chatmain_save" />
+            <Button fx:id="invite_btn1" layoutX="199.0" mnemonicParsing="false" onAction="#FileWriter" prefHeight="40.0" prefWidth="40.0" styleClass="decoration-button-chatout" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="92.0" prefWidth="400.0" style="-fx-background-color: #ffe5f5;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="6.0" layoutY="16.0" mnemonicParsing="false" onAction="#sendFile" prefHeight="56.0" prefWidth="49.0" styleClass="decoration-button-file">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="send_btn" layoutX="291.0" layoutY="16.0" mnemonicParsing="false" onAction="#mouseSend" prefHeight="31.0" prefWidth="55.0" style="-fx-background-color: #9dcfc7;" text="전송" />
+            <TextArea fx:id="input" layoutX="55.0" layoutY="15.0" onKeyPressed="#enterSend" onKeyReleased="#enterSendAfter" prefHeight="61.0" prefWidth="233.0" />
+            <Slider fx:id="slider" layoutX="290.0" layoutY="59.0" majorTickUnit="0.2" min="30.0" onMouseDragged="#opacity" prefHeight="14.0" prefWidth="59.0" style="-fx-background-color: #c1dedb;" value="100.0" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <TextArea fx:id="textArea_chat" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+   </center>
+</BorderPane>

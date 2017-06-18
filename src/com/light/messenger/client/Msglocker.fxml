@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.messenger.client.MsglockerController">
+   <top>
+      <Pane maxHeight="100.0" maxWidth="800.0" minHeight="100.0" minWidth="800.0" prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #f7ffb9;" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="comboBox_con" layoutX="531.0" layoutY="67.0" prefHeight="33.0" prefWidth="226.0" promptText="쪽지종류" style="-fx-background-color: #ffe39f;" />
+            <ImageView fitHeight="102.0" fitWidth="109.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/alight.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="191.0" layoutX="92.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../view/images/msgham.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane maxHeight="700.0" maxWidth="800.0" minHeight="700.0" minWidth="800.0" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #ffebc5;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion layoutX="198.0" layoutY="79.0" prefHeight="251.0" prefWidth="202.0" />
+            <Accordion layoutX="536.0" layoutY="159.0" />
+            <ListView fx:id="list_data" layoutX="56.0" layoutY="14.0" prefHeight="600.0" prefWidth="700.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

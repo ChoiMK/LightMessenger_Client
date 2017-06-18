@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.member.IdFindControll">
+   <top>
+      <Pane maxHeight="100.0" maxWidth="400.0" minHeight="42.0" minWidth="400.0" prefHeight="42.0" prefWidth="400.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="117.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../view/images/idtitle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane maxHeight="200.0" maxWidth="400.0" minHeight="200.0" minWidth="300.0" prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="69.0" layoutY="57.0" text="이름" />
+            <Label layoutX="62.0" layoutY="106.0" text="이메일" />
+            <TextField fx:id="t_nm" layoutX="103.0" layoutY="49.0" prefHeight="30.0" prefWidth="230.0" />
+            <TextField fx:id="t_email" layoutX="104.0" layoutY="98.0" prefHeight="30.0" prefWidth="230.0" />
+            <Button layoutX="122.0" layoutY="165.0" mnemonicParsing="false" onAction="#emailSend" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ffc4aa;" text="email전송" />
+            <Button layoutX="223.0" layoutY="165.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #ffc4aa;" text="취소" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

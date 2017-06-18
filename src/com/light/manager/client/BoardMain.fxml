@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane_boardMain" styleClass="manage_table-view" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.manager.client.BoardController">
+   <center>
+      <Pane maxHeight="400.0" maxWidth="800.0" minHeight="400.0" minWidth="800.0" prefHeight="400.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView_content" layoutX="39.0" layoutY="23.0" prefHeight="291.0" prefWidth="726.0" styleClass="manage_table-view" />
+            <Button layoutX="661.0" layoutY="334.0" mnemonicParsing="false" onAction="#onclikDelete" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #ff7a7a;" text="삭제" textFill="#5e5e5e">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button layoutX="503.0" layoutY="335.0" mnemonicParsing="false" onAction="#onclikSearch" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: #b5c5ff;" text="검색" textFill="#686868">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <ComboBox fx:id="combo_search" layoutX="150.0" layoutY="335.0" prefHeight="34.0" prefWidth="98.0" promptText="검색" style="-fx-background-color: #ffe8e8;" />
+            <TextField fx:id="t_search" layoutX="280.0" layoutY="336.0" prefHeight="32.0" prefWidth="223.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

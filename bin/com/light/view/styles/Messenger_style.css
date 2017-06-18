@@ -1,0 +1,405 @@
+.chat_btn{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/chat.png");
+    -fx-background-repeat:no-repeat;
+	-fx-background-size: 60px;
+	-fx-background-position:center;
+}
+.chat_btn:hover{
+	-fx-background-size: 80px;
+}
+
+
+.note_btn{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/note.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 30px;
+	-fx-background-position:center;
+	
+}
+.note_btn:hover{
+	-fx-background-size: 40px;
+}
+
+.hp_btn{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/home.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 50px;
+	-fx-background-position:center;
+}
+.hp_btn:hover{
+	-fx-background-size: 70px;
+}
+
+
+
+/*로그인창 로그인버튼*/
+.Light_log{
+	-fx-text-fill: grey; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( #eae091,  #f9e757);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.Light_log:hover{
+	  -fx-background-color: linear-gradient( #eae091,#87cc4f);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+
+/*채팅화면 */
+.decoration-button-file{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/fileget.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 95px;
+    -fx-background-position:center;
+}
+.decoration-button-close{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/close2.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+}
+.decoration-button-useradd{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/useradd.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:30px;
+    -fx-background-position:center;
+}
+.decoration-button-chatout{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/chatout.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:20px;
+    -fx-background-position:center;
+}
+.chatmain_save{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/getfile.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:30px;
+    -fx-background-position:center;
+}
+
+/*관리자페이지 버튼*/
+.manage_btn{
+	-fx-background-radius: 30;
+	-fx-text-fill: grey; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( #fff4de, #ffd6ac);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.manage_btn:hover {
+    -fx-background-color: linear-gradient(#ffd6ac,#ffd6ac);
+}
+
+/*관리자페이지 테이블뷰*/
+.manage_table-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+   
+}
+.manage_table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent rgba(255,255,255,0.3) transparent;
+    -fx-border-width: 1;
+    -fx-background-insets: 0;
+    -fx-padding: 0 10 0 0;
+}
+
+.manage_table-view .column-header, .table-view .filler {
+     -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(-fx-base, 80%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+.manage_table-view .column-header .label {
+	-fx-font-size: 12;
+    -fx-text-fill: 	black;
+    -fx-font-weight: bold;
+}
+/*테이블내용*/
+.manage_table-view .table-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: grey;
+    -fx-alignment: center;
+}
+.manage_table-view  .table-row-cell:filled:selected:focused, .table-row-cell:filled:selected {
+    -fx-background-color: rgba(0,0,0,0.1);
+}
+
+.manage_table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+/*미니홈피 테이블뷰*/
+.table-view {
+	
+	-fx-background-radius:15;
+    -fx-border-style: null;
+    -fx-background-color: 	#f6efe8;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+   
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent rgba(255,255,255,0.3) transparent;
+    -fx-border-width: 1;
+    -fx-background-insets: 0;
+    -fx-padding: 0 10 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(-fx-base, 80%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+.manage_table-view .column-header .label {
+	-fx-font-size: 13;
+    -fx-text-fill: 	black;
+    -fx-font-weight: bold;
+}
+/*미니홈피테이블내용*/
+.table-view .table-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: grey;
+    -fx-alignment: center;
+}
+.table-view  .table-row-cell:filled:selected:focused, .table-row-cell:filled:selected {
+    -fx-background-color: rgba(0,0,0,0.1);
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+/*미니홈피 버튼*/
+.mh_main_btn{
+	-fx-background-radius: 10;
+	-fx-text-fill: grey; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#f6efe8,#e7dfd7);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+       
+}
+.mh_main_btn:hover {
+    -fx-background-color: linear-gradient(#f6efe8,	#cccccc);
+}   
+
+
+.root {
+    -fx-font-family: "Nanum Myoungjo";
+    -fx-font-size: 12;
+}
+
+
+.Comment-button-change{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/change.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:60px;
+}
+
+.Comment-button-delete{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/datdelete.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size:60px;
+}
+
+.main_pane_pro{
+	-fx-background-radius:15;
+    -fx-border-style: null;
+    -fx-background-color: 	#f6efe8;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+}
+
+
+.mh_min_btn{
+	 -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+
+/*my home버튼 삼종*/
+.my_btn_m{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/msgbox.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 60px;
+	-fx-background-position:center;
+	
+}
+.my_btn_m:hover{
+	-fx-background-size: 70px;
+}
+
+.my_btn_p{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/peple.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 40px;
+	-fx-background-position:center;
+	
+}
+.my_btn_p:hover{
+	-fx-background-size: 50px;
+}
+
+.my_btn_h{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/home.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 50px;
+	-fx-background-position:center;
+	
+}
+.my_btn_h:hover{
+	-fx-background-size: 60px;
+}
+
+/*셀채우기*/
+
+.list-cell:selected {
+    -fx-background-color: white;
+    -fx-text-fill: grey; 
+}
+.user_name_color{
+	-fx-text-fill: grey; 
+    -fx-font-family: "Helvetica";
+    -fx-font-weight: bold;
+}
+
+/*미니홈피 프로필*/
+.profile_go{
+    -fx-border-style: dashed;
+    -fx-border-width: 5px;
+  	-fx-border-color: grey;
+    -fx-background-color: 	null;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+}
+
+/*사진첩 버튼*/
+.photo_btn{
+	-fx-text-fill: grey; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( #efe0b1,  #efe0b1);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.photo_btn2{
+	-fx-text-fill: grey; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient( 	#efe0b1,#efe0b1);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.photo_btn:hover {
+    -fx-background-color: linear-gradient(#efe0b1,	#d3c8b1);
+}
+
+/*쪽지보관함 미니버튼*/
+.msg_mnibtn{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/msgread.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 40px;
+	-fx-background-position:center;
+}
+.msg_mnibtn2{
+	-fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/msgdelete.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: 30px;
+	-fx-background-position:center;
+}
+
+/*photo2 글쓰기 버튼*/
+.photo2_btn{
+	-fx-text-fill: black; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#cac5ff,	#fbe5e5);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.msgdtail_gra{
+	 -fx-background-color: linear-gradient(	#fff3f3,#efd0b1);
+}
+.msgdtail_btn{
+	-fx-text-fill: black; 
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#cac5ff,#ffc3c3);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.magdtail2_r{
+	-fx-background-radius: 10;
+}
+
+.list-view .scroll-bar:horizontal .increment-arrow,
+.list-view .scroll-bar:horizontal .decrement-arrow,
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}

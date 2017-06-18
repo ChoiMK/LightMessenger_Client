@@ -1,0 +1,53 @@
+package com.light.client.file;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class ReceiveTCPClient {
+	
+	public void clientRun(String run){
+		Socket socket = null;
+		InputStream is = null;
+		FileOutputStream fos= null;
+		
+		try {
+			socket = new Socket("192.168.201.252",1633);
+			
+			is = socket.getInputStream();
+			
+			fos= new FileOutputStream(new File(run));
+			
+			int ch =0;
+			
+			while((ch=is.read())!=-1){
+				fos.write(ch);
+			}
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			
+				try {
+					if(fos!=null){
+						fos.close();
+					}
+					if(is!=null){
+						is.close();
+					}
+					if(socket!=null){
+						socket.close();
+					}
+					}catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+	}
+	
+}
+

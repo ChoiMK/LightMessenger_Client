@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.member.JoinController">
+   <top>
+      <Pane maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #ffdef7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="150.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../view/images/memga.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="327.0" layoutY="-1.0" mnemonicParsing="false" onAction="#insertJoin" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ffc4aa;" text="회원가입" />
+            <Button layoutX="419.0" layoutY="-1.0" mnemonicParsing="false" onAction="#cancle" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #ffc4aa;" text="취소" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <GridPane fx:id="g_mian" maxHeight="400.0" maxWidth="500.0" minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="117.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="190.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="192.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="ID" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="비밀번호" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="비밀번호확인" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="닉네임" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="이메일" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="인증코드" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="이름" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="주소" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="핸드폰" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="생년월일" GridPane.rowIndex="9" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="성별" GridPane.rowIndex="10" />
+            <TextField fx:id="t_id" prefHeight="23.0" prefWidth="189.0" GridPane.columnIndex="1" />
+            <TextField fx:id="t_n" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="t_e" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="t_ij" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="t_nm" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="t_add" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="t_hp" prefHeight="23.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="b_id" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#idCheak" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ffc4aa;" text="Id중복확인" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="b_n" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#NicCheak" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #ffc4aa;" text="닉네임중복확인" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="b_ij" contentDisplay="CENTER" mnemonicParsing="false" onAction="#emailSend" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #ffc4aa;" text="인증번호 보내기" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="60.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="b_code" contentDisplay="CENTER" mnemonicParsing="false" onAction="#emailCheck" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ffc4aa;" text="코드확인" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin></Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <children>
+                  <ComboBox fx:id="c_gen" layoutY="7.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+            <PasswordField fx:id="p_pw" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="p_pws" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="date_bir" prefHeight="23.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
